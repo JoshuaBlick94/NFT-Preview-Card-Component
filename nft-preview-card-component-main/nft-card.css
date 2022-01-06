@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.nft-card {
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nft-card .nft-image {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.nft-card .nft-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.nft-card .nft-details .title h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.nft-card .nft-details .description {
+    margin-bottom: 20px;
+}
+
+.nft-card .nft-details .description p {
+    color: hsl(215, 32%, 27%);
+    line-height: 1.6; 
+    font-weight: 400;   
+}
+
+.eth-symbol{
+    display: flex;
+    align-items: center;
+}
+
+.time-left svg {
+    margin-right: 5px;
+}
+
+.time-left{
+    display: flex;
+    align-items: center;
+}
+
+.eth-symbol svg {
+    margin-right: 5px;
+}
+
+.nft-card .eth-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nft-card .nft-details::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: hsl(215, 32%, 27%);
+    height: 1.3px;
+    margin-top: 15px;  
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+
+.card-footer .profile-img {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+
+.card-footer .profile-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.credit p {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(215, 32%, 27%);
+}
+
+.credit p a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;  
+}
